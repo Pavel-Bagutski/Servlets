@@ -1,4 +1,4 @@
-package org.example.pinkySite;
+package org.example.SingerVote;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -12,7 +12,7 @@ import java.util.*;
 
 
 @WebServlet(urlPatterns = "/singleChoice")
-public class PageResponsServlet extends HttpServlet {
+public class SingerPageResponsServlet extends HttpServlet {
 
     CounterVote counterVote;
 

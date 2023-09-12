@@ -1,7 +1,4 @@
-package org.example.pinkySite;
-
-import java.time.LocalDateTime;
-import java.util.ArrayList;
+package org.example.SingerVote;
 
 public class TextTime {
     private String text;

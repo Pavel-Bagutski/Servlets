@@ -1,7 +1,4 @@
-package org.example.pinkySite;
-
-import java.util.ArrayList;
-import java.util.List;
+package org.example.SingerVote;
 
 public class CounterVote {
     String subjectOfVote;

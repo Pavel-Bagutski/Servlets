@@ -19,7 +19,7 @@ public class Loader {
         String lastName ="Pavel";   //scanner.nextLine();
         String firstName ="Bogutski";  //scanner.nextLine();
         String var10000 = URLEncoder.encode(firstName, "UTF-8");
-        String urlParameters = "?firstName=" + var10000 + "&lastName=" + URLEncoder.encode(lastName, "UTF-8");
+        String urlParameters = "?firstName=" + URLEncoder.encode(firstName, "UTF-8") + "&lastName=" + URLEncoder.encode(lastName, "UTF-8");
         String url = "http://localhost:8080/Servlets/hello_with_name" + urlParameters;
 
 
