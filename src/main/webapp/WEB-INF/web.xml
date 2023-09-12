@@ -1,17 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
-                      https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
-         version="6.0"
-         metadata-complete="true">
-    <display-name> FirstApp </display-name>
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         metadata-complete="false"
+         version="6.0">
+    <display-name> First App</display-name>
+    <description> Welcome to Tomcat World</description>
+
+    <context-param>
+        <param-name>message</param-name>
+        <param-value>Hello Servlets</param-value>
+    </context-param>
+
     <servlet>
-        <servlet-name>HelloWordServlet</servlet-name>
-        <servlet-class>it.academy.HelloWordServlet</servlet-class>
+        <servlet-name>FirstServlets</servlet-name>   <!-- working how reflection -->
+        <servlet-class>org.example.HelloWorldServlets</servlet-class>
     </servlet>
+
+
     <servlet-mapping>
-        <servlet-name>HelloWordServlet</servlet-name>
+        <servlet-name>FirstServlets</servlet-name>
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
+
 
 </web-app>
