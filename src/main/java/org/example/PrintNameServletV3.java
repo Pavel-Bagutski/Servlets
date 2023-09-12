@@ -11,7 +11,7 @@ import java.io.PrintWriter;
 
 // servlet specific class
 
-@WebServlet(name = "PrintNameServletV3")
+@WebServlet(name = "PrintNameServletV3", urlPatterns = "/printNameV3")
 public class PrintNameServletV3 extends HttpServlet {
 
     private String NAME_PARAMETER_HEADER = "ARRAY_NAME_PARAM";
@@ -29,7 +29,7 @@ public class PrintNameServletV3 extends HttpServlet {
 
         if(names != null){
             for (String name : names ){
-                writer.write("<p>" + header + ":" + name + "</p>");
+                writer.write("<p>" + header + ": " + name + "</p>");
             }
         }
     }

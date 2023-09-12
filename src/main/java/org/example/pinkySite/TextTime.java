@@ -3,20 +3,20 @@ package org.example.pinkySite;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
-public class TextDataTime {
+public class TextTime {
     private String text;
-    private LocalDateTime time;
+    private long time;
 
-    public TextDataTime(String text, LocalDateTime time) {
+    public TextTime(String text) {
         this.text = text;
-        this.time = time;
+        this.time = System.currentTimeMillis();;
     }
 
     public void setText(String text) {
         this.text = text;
     }
 
-    public void setTime(LocalDateTime time) {
+    public void setTime(long time) {
         this.time = time;
     }
 
@@ -24,20 +24,13 @@ public class TextDataTime {
         return text;
     }
 
-    public LocalDateTime getTime() {
+    public long getTime() {
         return time;
     }
 
-    public static TextDataTime getEarliestMessage(ArrayList<TextDataTime> messages) {
-        if (messages.isEmpty()) {
-            return null;
-        }
-        TextDataTime earliest = messages.get(0);
-        for (TextDataTime message : messages) {
-            if (message.getTime().isBefore(earliest.getTime())) {
-                earliest = message;
-            }
-        }
-        return earliest;
+
+    @Override
+    public String toString() {
+        return  "   " + text;
     }
 }

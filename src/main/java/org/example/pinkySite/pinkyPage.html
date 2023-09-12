@@ -1,10 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <title>Select Performers</title>
+    <style>
+        body {
+            background-color: #efdecd;
+        }
+    </style>
 </head>
 <body>
-$END$
+<form name="loginForm" method="post" action="http://localhost:8080/Servlets-1.1.1-SNAPSHOT/singleChoice">
+
+    <p><label>music artists:</label>
+    <input type="radio" name="singer", value="Lady Gaga"/> Lady Gaga
+    <input type="radio" name="singer", value="Rihanna"/> Rihanna
+    <input type="radio" name="singer", value="Jennifer Lopez"/> Jennifer Lopez
+    <input type="radio" name="singer", value="Justin Bieber"/> Justin Bieber
+    </p><br/>
+
+    <p>your favorite genres of music:
+        <br/>
+        <input type="checkbox" name="genres", value="Heavy" /> Heavy Metal</br>
+        <input type="checkbox" name="genres", value="Folk" /> Folk</br>
+        <input type="checkbox" name="genres", value="R&B" /> R&B/Soul</br>
+        <input type="checkbox" name="genres", value="Classical" /> Classical</br>
+        <input type="checkbox" name="genres", value="Jazz" /> Jazz</br>
+        <input type="checkbox" name="genres", value="Country" />Country</br>
+        <input type="checkbox" name="genres", value="Electronic" /> Electronic Dance Music (EDM)</br>
+        <input type="checkbox" name="genres", value="Rap" /> Hip-hop/Rap</br>
+        <input type="checkbox" name="genres", value="Rock" /> Rock</br>
+        <input type="checkbox" name="genres", value="Pop" /> Pop</br></p>
+    </br>
+
+    <p>describe why you like Justin Bieber
+        <textarea name="message", value = message></textarea></p>
+
+    <input type="submit" value="Submit">
+
+
+
+  <!--  <br/>
+    <label for="performers">Select Performers:</label>
+    <select id="performers" name="performers" multiple>
+        <option value="performer1">Performer 1</option>
+        <option value="performer2">Performer 2</option>
+        <option value="performer3">Performer 3</option>
+    </select>
+    <input type="submit" value="Submit">
+
+
+    &lt;!&ndash;others&ndash;&gt;
+
+    <p>Normal text field.
+        <input type="text" name="name" /></p>
+
+    <p>Secret text field.
+        <input type="password" name="pass" /></p>
+
+    <p>Single-selection radiobuttons.
+        <input type="radio" name="title" value="Mr" /> Mr
+        <input type="radio" name="title" value="Ms" /> Ms
+        <input type="radio" name="title" value="Mx" /> Mx</p>
+
+    <p>Single-selection checkbox.
+        <input type="checkbox" name="agree" /> Agree?</p>
+
+    <p>Multi-selection checkboxes.
+        <input type="checkbox" name="role" value="USER" /> User
+        <input type="checkbox" name="role" value="ADMIN" /> Admin</p>
+
+    <p>Single-selection dropdown.
+        <select name="countryCode">
+            <option value="NL">Netherlands</option>
+            <option value="US">United States</option>
+        </select></p>
+
+    <p>Multi-selection listbox.
+        <select name="animalId" multiple="true" size="2">
+            <option value="1">Cat</option>
+            <option value="2">Dog</option>
+        </select></p>
+
+    <p>Text area.
+        <textarea name="message"></textarea></p>
+
+    <p>Submit button.
+        <input type="submit" name="submit" value="Submit" /></p>
+
+    <p>Cancel button.
+        <input type="submit" name="cancel" value="Cancel" /></p>
+-->
+
+</form>
 </body>
 </html>
